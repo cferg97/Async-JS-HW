@@ -27,8 +27,8 @@ const loadMetallica = () => {
         console.log(metallica.data)
         for (data of metallica.data){
             const row = document.querySelector(".row")
-            row.innerHTML += `<div class="card col-4">
-            <img src="${data.album.cover}" class="card-img-top mt-1">
+            row.innerHTML += `<div class="card col-3 align-items-center">
+            <img src="${data.album.cover_medium}" class="card-img-top mt-1">
             <div class="card-body">
             <h5 class="card-title">${data.artist.name}</h5>
             <p class="card-text">Song title: ${data.title}</p>
@@ -46,8 +46,8 @@ const loadPinkfloyd = () => {
         console.log(pinkFloyd.data)
         for (data of pinkFloyd.data){
             const row = document.querySelector(".row")
-            row.innerHTML += `<div class="card col-4">
-            <img src="${data.album.cover}" class="card-img-top mt-1">
+            row.innerHTML += `<div class="card col-3 align-items-center">
+            <img src="${data.album.cover_medium}" class="card-img-top mt-1">
             <div class="card-body">
             <h5 class="card-title">${data.artist.name}</h5>
             <p class="card-text">Song title: ${data.title}</p>
@@ -64,8 +64,8 @@ const loadDaftPunk = () => {
         console.log(daftPunk.data)
         for (data of daftPunk.data){
             const row = document.querySelector(".row")
-            row.innerHTML += `<div class="card col-4">
-            <img src="${data.album.cover}" class="card-img-top mt-1">
+            row.innerHTML += `<div class="card col-3 align-items-center">
+            <img src="${data.album.cover_medium}" class="card-img-top mt-1">
             <div class="card-body">
             <h5 class="card-title">${data.artist.name}</h5>
             <p class="card-text">Song title: ${data.title}</p>
