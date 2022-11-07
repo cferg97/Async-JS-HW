@@ -35,7 +35,9 @@ const loadMetallica = () => {
             </div>
             </div>`
         }
+        
     })
+    .catch(err => console.error(err));
 }
 
 
@@ -55,6 +57,7 @@ const loadPinkfloyd = () => {
             </div>`
         }
     })
+    .catch(err => console.error(err));
 }
 
 const loadDaftPunk = () => {
@@ -73,9 +76,10 @@ const loadDaftPunk = () => {
             </div>`
         }
     })
+    .catch(err => console.error(err));
 }
 
-const clear = () => {
+const clearPage = () => {
     const row = document.querySelector(".row")
     row.innerHTML = ""
 }
